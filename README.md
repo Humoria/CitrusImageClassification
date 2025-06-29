@@ -1,4 +1,4 @@
-# Orange Image Classification using CNN
+# Orange Image Classification using CNN 🍊
 
 This project is a deep learning-based image classification system designed to identify **four types of oranges** using Convolutional Neural Networks (CNNs). It was developed as part of a computer vision coursework assignment using TensorFlow and Keras.
 
