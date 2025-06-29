@@ -1,63 +1,109 @@
-# Orange Image Classification using CNN 🍊
+🍊 **JERUKNET**  
+**JerukNet** is a deep learning-powered image classification system built to automatically recognize four distinct types of oranges: **Jeruk Mandarin, Jeruk Bali, Jeruk Lemon, and Jeruk Limau**. This application leverages a convolutional neural network (CNN) model for multi-class image classification tasks.
 
-This project is a deep learning-based image classification system designed to identify **four types of oranges** using Convolutional Neural Networks (CNNs). It was developed as part of a computer vision coursework assignment using TensorFlow and Keras.
+---
 
-## 🧠 Project Goal
+### 🚀 Features
 
-To build a CNN-based classifier that can accurately recognize and differentiate between the following types of oranges:
-- Jeruk Mandarin
-- Jeruk Bali
-- Jeruk Lemon
-- Jeruk Limau
+✅ Classifies orange images into 4 types  
+🧠 Built with CNN architecture using TensorFlow/Keras  
+📷 Supports custom dataset loading and preprocessing  
+📊 Visual performance reports (accuracy & confusion matrix)  
+🧪 Model prediction support for new, unseen images  
+💾 Trained model can be saved and reused (`.h5` format)  
 
-## 📁 Project Structure
+---
 
-- `PrediksiJeruk_Final_Marco.ipynb` — Main notebook: preprocessing, model training, evaluation, and prediction.
-- `dataset/` — Image data folder (must be structured as shown below).
-- `model.h5` — Saved model file.
-- `hasil_predict/` — Output prediction folder with visual results.
+### 🛠️ Tech Stack
 
-## 📊 Dataset Structure
+- **Machine Learning**: TensorFlow, Keras  
+- **Language**: Python 3  
+- **Notebook**: Jupyter Notebook  
+- **Visualization**: Matplotlib  
+- **Evaluation**: Scikit-learn  
 
-dataset/
-├── jeruk_mandarin/
-├── jeruk_bali/
-├── jeruk_lemon/
-└── jeruk_limau/
+---
 
-markdown
+### 📁 Project Structure
+
+orange-classifier/
+├── PrediksiJeruk_Final_Marco.ipynb # Main notebook (training, prediction)
+├── dataset/
+│ ├── jeruk_mandarin/
+│ ├── jeruk_bali/
+│ ├── jeruk_lemon/
+│ └── jeruk_limau/
+├── model.h5 # Saved CNN model
+├── hasil_predict/ # Folder for prediction results
+└── README.md
+
+yaml
 Copy
 Edit
 
-Each subfolder contains images for its respective orange class.
+---
 
-## ⚙️ Technologies Used
+### 📸 How It Works
 
-- Python 3
-- TensorFlow / Keras
-- NumPy
-- Matplotlib
-- Scikit-learn
+1. Prepare a dataset with 4 folders (each for a type of orange).
+2. Run the notebook `PrediksiJeruk_Final_Marco.ipynb`.
+3. CNN model is trained on the dataset.
+4. Evaluation results are displayed (confusion matrix, metrics).
+5. New images can be classified using the trained model.
 
-## 🚀 How to Run
+---
 
-1. Clone or download the repository.
-2. Ensure the dataset is structured correctly (as shown above).
-3. Open the Jupyter notebook: `PrediksiJeruk_Final_Marco.ipynb`.
-4. Run all cells to:
-   - Load and preprocess image data
-   - Train and evaluate CNN model
-   - Predict image classes
-5. Save or load the trained model using:
-   ```python
-   model.save("model.h5")
-   model = keras.models.load_model("model.h5")
-✅ Model Evaluation
-Evaluation metrics include accuracy, confusion matrix, and classification report.
+### 🧠 Model Details
 
-The model shows good performance in recognizing the 4 types of oranges.
+The model uses a **custom CNN architecture** composed of:
+- Convolutional Layers with ReLU activation  
+- Max Pooling for dimensionality reduction  
+- Fully Connected (Dense) Layers  
+- Dropout for regularization
 
-📌 Notes
-You can experiment with additional layers, dropout rates, or optimizers to improve performance.
+You can fine-tune, retrain, or expand the model to classify additional fruit types if desired.
 
-Consider applying data augmentation for better generalization.
+---
+
+### 🧪 Use Case
+
+This project is suitable for:
+- Agricultural classification systems  
+- Smart farming and inventory automation  
+- Educational tools for fruit recognition  
+- Computer vision training tasks  
+
+---
+
+### ⚙️ Setup & Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/orange-classifier.git
+   cd orange-classifier
+Install required packages:
+
+bash
+Copy
+Edit
+pip install tensorflow keras matplotlib scikit-learn
+Run the notebook:
+
+bash
+Copy
+Edit
+jupyter notebook PrediksiJeruk_Final_Marco.ipynb
+📦 Dependencies
+TensorFlow
+
+Keras
+
+Matplotlib
+
+NumPy
+
+Scikit-learn
+
+👨‍💻 Author
+Created with 🍊 by Marco Albert
+For academic and experimental use only.
