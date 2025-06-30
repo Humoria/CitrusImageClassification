@@ -37,10 +37,6 @@ orange-classifier/
 ├── hasil_predict/ # Folder for prediction results
 └── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ### 📸 How It Works
