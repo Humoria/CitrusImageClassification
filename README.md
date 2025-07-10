@@ -77,19 +77,19 @@ This project is suitable for:
    ```bash
    git clone https://github.com/yourusername/orange-classifier.git
    cd orange-classifier
-Install required packages:
+2. Install required packages:
 
-bash
-Copy
-Edit
+```bash
+
 pip install tensorflow keras matplotlib scikit-learn
 Run the notebook:
+```
+```bash
 
-bash
-Copy
-Edit
 jupyter notebook PrediksiJeruk_Final_Marco.ipynb
-📦 Dependencies
+```
+
+## 📦 Dependencies
 TensorFlow
 
 Keras
